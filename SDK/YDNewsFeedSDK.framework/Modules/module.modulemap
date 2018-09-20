@@ -1,0 +1,6 @@
+framework module YDNewsFeedSDK {
+  umbrella header "YDNewsFeedSDK.h"
+
+  export *
+  module * { export * }
+}
