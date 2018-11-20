@@ -33,6 +33,11 @@ typedef NS_ENUM(NSUInteger, YDThemeType) {
  */
 - (void)userRefreshData:(BOOL)animation;
 
+/**
+ * 当前展示频道名,可能为空
+ */
+- (NSString *)currentChannelPageName;
+
 @end
 
 @interface YDNewsFeedSDK : NSObject

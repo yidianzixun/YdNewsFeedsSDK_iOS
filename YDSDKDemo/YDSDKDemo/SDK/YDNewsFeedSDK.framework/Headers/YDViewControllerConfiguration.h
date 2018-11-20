@@ -25,6 +25,17 @@
 
 @end
 
+@protocol YDNewsListSlideDelegate <YDViewControllerDelegate>
+// 多频道列表delegate
+
+/**
+ * 选择切换频道时回调方法
+ * @param channelPageName 展示的频道名
+ */
+- (void)onPageSelected:(NSString *)channelPageName;
+
+@end
+
 @interface YDViewControllerConfiguration : NSObject
 
 @property (nonatomic, weak) id <YDViewControllerDelegate> delegate;

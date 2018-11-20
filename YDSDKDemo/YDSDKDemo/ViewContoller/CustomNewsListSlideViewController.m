@@ -10,7 +10,7 @@
 #import "LayoutHandler.h"
 #import <YDNewsFeedSDK/YDNewsFeedSDK.h>
 
-@interface CustomNewsListSlideViewController () <YDViewControllerDelegate>
+@interface CustomNewsListSlideViewController () <YDNewsListSlideDelegate>
 
 @property (nonatomic ,strong) UIViewController<YDNewsFeedViewControllerProtocol> *newsListSlideVC;
 
@@ -111,6 +111,10 @@
 
 - (void)yd_popViewControllerAnimated:(BOOL)animated {
     [self.navigationController popViewControllerAnimated:animated];
+}
+
+- (void)onPageSelected:(NSString *)channelPageName {
+    NSLog(@"");
 }
 
 /*
