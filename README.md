@@ -36,7 +36,7 @@
 一点资讯开放平台SDK以framework+bundle的形式提供，支持iOS系统最低版本为8.0，开发者可以前往一点资讯开发者平台下载最新SDK包，下载成功后在工程中导入YDNewsFeed.framework和YDNewsFeedBundle.bundle。
 2. 添加依赖Framework
 开发者需要在 Target—>Build Phases —> Link Binary With Libraries添加以下Framework：UIKit.framework、Foundation.framework、libsqite3.0tbd
-除此之外， SDK还依赖AFNetworking和SDWebImage第三方库，可通过pod 'AFNetworking', '\~> 3.0' 、 pod 'SDWebImage', '\~> 4.0'导入，或者前往<https://github.com/AFNetworking/AFNetworking>、<https://github.com/rs/SDWebImage>下载
+除此之外， SDK还依赖AFNetworking和SDWebImage第三方库，可通过pod 'AFNetworking', '\~> 3.0' 、 pod 'SDWebImage', '\~> 5.0'导入，或者前往<https://github.com/AFNetworking/AFNetworking>、<https://github.com/rs/SDWebImage>下载
 3. 其他注意事项
 避免静态库中类加载不全造成崩溃，开发者在Target—>Bulid  Setting—>Linking—>Other Link Flags选项中添加-Ojbc。
 SDK不支持bitcode，开发者须在Target—>Bulid  Setting—>Build Options —>Enable Bitcode选项置为NO。
